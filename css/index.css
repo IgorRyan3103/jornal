@@ -1,0 +1,148 @@
+/* Reset de estilos para garantir uma base limpa */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0; /* Fixa o cabeçalho no topo */
+    z-index: 1; /* Coloca o cabeçalho acima de outros elementos */
+}
+
+.cabecalho h1 {
+    font-size: 2rem;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.manchete {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.manchete h2 {
+    font-size: 1.5rem;
+}
+
+.conteudo-principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.noticia-1, .noticia-2, .noticia-3, .noticia-4, .noticia-5, .noticia-6 {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.noticia-1 h2, .noticia-2 h2, .noticia-3 h2, .noticia-4 h2, .noticia-5 h2, .noticia-6 h2 {
+    white-space: normal;
+}
+
+.imagens-lado-a-lado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -15px;
+}
+
+.imagem-metade-tela {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem-metade-tela img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagem-metade-tela p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.noticias-secundarias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -15px;
+}
+
+.noticias-secundarias .conteudo {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.noticias-secundarias .conteudo img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    vertical-align: bottom;
+    margin-top: auto;
+    max-height: 250px;
+}
+
+.noticias-secundarias .conteudo p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Estilos para o rodapé */
+.rodape {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
